@@ -46,5 +46,5 @@ run_analysis <- function(){
     summarydata <- group_by(summarydata, activity, subject)
     finalsumdata <- summarize(summarydata, meandata = mean(meandata), sddata = mean(sddata))
     
-    write.table(finalsumdata, "mydata.txt", sep="\t", row.names = FALSE)
+    # write.table(finalsumdata, "mydata.txt", sep="\t", row.names = FALSE)
 }
